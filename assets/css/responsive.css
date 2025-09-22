@@ -153,3 +153,25 @@
     justify-content: center;
   }
 }
+
+/* ==== FIX CTA WHATSAPP OFFERTE (solo mobile) ==== */
+@media (max-width: 480px){
+  .offerta-locale .cta-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+
+    font-size: 1rem;           /* leggermente più piccolo */
+    padding: .8rem 1.6rem;     /* meno alto, più largo */
+    border-radius: 50px;       /* non ellisse gigante ma pillola */
+    white-space: nowrap;
+    max-width: 100%;           /* evita overflow del container */
+  }
+
+  .offerta-locale .cta-primary svg {
+    width: 22px; 
+    height: 22px;
+    flex: 0 0 22px;
+  }
+}
