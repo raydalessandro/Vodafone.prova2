@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Vodafone Store Milano (Rivenditore Autorizzato)",
+  "url": "https://vodafone-store-milano.com/",
+  "logo": "https://vodafone-store-milano.com/assets/icons/logo-512.png",
+  "sameAs": [
+    "https://www.facebook.com/tuapagina",
+    "https://www.instagram.com/tuapagina"
+  ]
+}
