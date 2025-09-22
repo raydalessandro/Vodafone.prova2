@@ -144,3 +144,28 @@ body{
 
 /* Focus */
 :where(a,button,[tabindex]):focus-visible{outline:3px solid rgba(230,0,0,.55);outline-offset:3px;border-radius:12px}
+
+/* ==== SECTIONS COMMON ==== */
+.services{padding:6rem 2rem;background:#fff;position:relative}
+.services-container{max-width:1200px;margin:0 auto}
+.section-header{text-align:center;margin-bottom:4rem}
+.section-tag{font-size:.9rem;font-weight:600;color:var(--brand);text-transform:uppercase;letter-spacing:1px;margin-bottom:1rem}
+.section-title{font-size:clamp(2rem,5vw,3.5rem);font-weight:700;margin-bottom:1.5rem;color:var(--ink)}
+.section-subtitle{font-size:1.2rem;color:#475569;max-width:600px;margin:0 auto}
+
+/* Buttons – hover/active states */
+.btn-primary:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 12px 35px rgba(230,0,0,.45),0 0 60px rgba(230,0,0,.25)}
+.btn-primary:active{transform:translateY(1px) scale(.99);box-shadow:none}
+.btn-white:hover{transform:translateY(-3px) scale(1.05);box-shadow:0 15px 40px rgba(0,0,0,.3)}
+
+/* Links & small hovers */
+.card-cta:hover{text-decoration:underline}
+.ft-links a:hover{transform:translateX(4px);text-shadow:0 0 16px rgba(255,255,255,.7)}
+.back-top:hover{transform: translateY(-4px) scale(1.1);background:#fff}
+.whatsapp-btn:hover{transform:scale(1.15);box-shadow:0 15px 45px rgba(37,211,102,.8)}
+
+/* Breadcrumb current */
+.breadcrumb li[aria-current="page"]{color:#475569}
+
+/* Minor chips used in negozi/contatti */
+.chip{font-size:.72rem;font-weight:800;color:#e60000;background:#fff;padding:4px 10px;border-radius:999px;margin-left:6px;box-shadow:0 2px 8px rgba(0,0,0,.1)}
