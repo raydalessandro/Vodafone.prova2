@@ -1,116 +1,107 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Vodafone Store Milano – Offerte Mobile, Fibra e Business 2025</title>
   <meta name="description" content="Rivenditore autorizzato Vodafone a Milano. Offerte per privati e business, 5G, fibra, smartphone e assistenza dedicata. Prenota in negozio o via WhatsApp.">
   <meta name="robots" content="index,follow,max-image-preview:large">
-  <link rel="canonical" href="https://vodafone-store-milano.com">
-  <meta name="theme-color" content="#e60000">
+  <link rel="canonical" href="https://vodafone-store-milano.com/">
 
   <!-- Open Graph / Twitter -->
   <meta property="og:site_name" content="Vodafone Store Milano">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Vodafone Store Milano – Offerte Mobile & Fibra 2025">
   <meta property="og:description" content="5G, Fibra, smartphone top e assistenza premium. Prenota ora.">
-  <meta property="og:url" content="https://vodafone-store-milano.com">
-  <meta property="og:image" content="/og/og-1200x630.jpg">
+  <meta property="og:url" content="https://vodafone-store-milano.com/">
+  <meta property="og:image" content="og/og-1200x630.jpg">
   <meta name="twitter:card" content="summary_large_image">
 
-  <!-- Icons -->
-  <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
-  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-180.png">
+  <!-- Icone -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-180.png">
+  <meta name="theme-color" content="#e60000">
 
-  <!-- Fonts: preconnect + swap -->
+  <!-- Font: per 100/100 meglio system stack. Se vuoi Inter, riattiva commenti -->
+  <!--
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" media="print" onload="this.media='all'">
+  -->
 
   <!-- Preload LCP (hero) -->
   <link rel="preload" as="image"
-        href="/assets/images/hero/mesh-1600.webp"
-        imagesrcset="/assets/images/hero/mesh-800.webp 800w, /assets/images/hero/mesh-1200.webp 1200w, /assets/images/hero/mesh-1600.webp 1600w"
+        href="assets/images/hero/mesh-1600.webp"
+        imagesrcset="assets/images/hero/mesh-800.webp 800w, assets/images/hero/mesh-1200.webp 1200w, assets/images/hero/mesh-1600.webp 1600w"
         imagesizes="(max-width: 768px) 100vw, 50vw">
 
-  <!-- CSS -->
-  <link rel="preload" href="/assets/css/main.css" as="style">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="stylesheet" href="/assets/css/responsive.css" media="(max-width:1024px)">
+  <!-- CSS: preload + swap -->
+  <link rel="preload" href="assets/css/main.css" as="style">
+  <link rel="stylesheet" href="assets/css/main.css" media="print" onload="this.media='all'">
+  <link rel="preload" href="assets/css/responsive.css" as="style">
+  <link rel="stylesheet" href="assets/css/responsive.css" media="print" onload="this.media='all'">
 
-  <!-- JSON-LD (preload + noscript fallback) -->
-  <link rel="preload" as="fetch" href="/assets/schema/organization.json" crossorigin>
-  <link rel="preload" as="fetch" href="/assets/schema/localbusiness-duomo.json" crossorigin>
-  <script type="application/ld+json" fetchpriority="low" src="/assets/schema/organization.json"></script>
-  <script type="application/ld+json" fetchpriority="low" src="/assets/schema/localbusiness-duomo.json"></script>
-  <noscript>
-    <script type="application/ld+json">
-      <!-- fallback minimo, opzionale -->
-    </script>
-  </noscript>
-
-  <!-- CSS critico min (solo ciò che serve per no-FOUC) -->
-  <style>
-    :root{--vodafone-red:#e60000;--ink:#1e293b}
-    *{box-sizing:border-box}body{font-family:'Inter',system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Arial,sans-serif;margin:0}
-    .brand-ribbon{position:fixed;inset:0 0 auto 0;height:6px;background:linear-gradient(90deg,#e60000,#ff3b30,#e60000,#b30000);z-index:1200}
-    .navbar{position:fixed;top:6px;width:100%;background:rgba(255,255,255,.95);backdrop-filter:blur(20px);z-index:1000;border-bottom:1px solid #e2e8f0}
-    .nav-container{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem}
-    .logo{font-weight:700;text-decoration:none;color:#111;display:flex;gap:.5rem;align-items:center}
-    .nav-menu{display:flex;gap:1.5rem;list-style:none;margin:0;padding:0}
-    .nav-link{text-decoration:none;color:#1e293b;font-weight:500}
-    .hero{min-height:100dvh;display:grid;place-items:center;padding:96px 24px 48px}
-    .hero-inner{max-width:1200px;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
-    @media(max-width:900px){.hero-inner{grid-template-columns:1fr;text-align:center}}
-  </style>
+  <!-- JSON-LD -->
+  <script type="application/ld+json" src="assets/schema/organization.json"></script>
+  <script type="application/ld+json" src="assets/schema/localbusiness-duomo.json"></script>
 </head>
 <body>
   <a href="#offerte" class="skip-link">Salta ai contenuti</a>
-  <div class="brand-ribbon"></div>
+
+  <!-- Ribbon e bg -->
+  <div class="brand-ribbon" aria-hidden="true"></div>
   <div class="mesh-bg" aria-hidden="true"></div>
 
   <!-- NAV -->
-  <nav class="navbar" id="navbar" role="navigation" aria-label="Principale">
+  <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="/" class="logo" aria-label="Vodafone Store Milano - Home">
-        <span aria-hidden="true">📱</span>
-        <span style="background:linear-gradient(135deg,#e60000,#ff3333);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Vodafone Store Milano</span>
+      <a href="index.html" class="logo">
+        <span class="logo-emoji" aria-hidden="true">📱</span>
+        <span class="logo-text">Vodafone Store Milano</span>
       </a>
+
       <ul class="nav-menu" id="navMenu">
-        <li><a href="/privati.html"   class="nav-link">Privati</a></li>
-        <li><a href="/business.html"  class="nav-link">Business</a></li>
-        <li><a href="/servizi.html"   class="nav-link">Servizi</a></li>
-        <li><a href="/smartphone.html" class="nav-link">Smartphone</a></li>
-        <li><a href="/negozi.html"    class="nav-link">I Nostri Negozi</a></li>
-        <li><a href="/contatti.html"  class="nav-link">Contatti</a></li>
+        <li><a href="privati.html" class="nav-link">Privati</a></li>
+        <li><a href="business.html" class="nav-link">Business</a></li>
+        <li><a href="servizi.html" class="nav-link">Servizi</a></li>
+        <li><a href="smartphone.html" class="nav-link">Smartphone</a></li>
+        <li><a href="negozi.html" class="nav-link">I Nostri Negozi</a></li>
+        <li><a href="contatti.html" class="nav-link">Contatti</a></li>
       </ul>
+
       <button class="mobile-menu-btn" id="mobileMenuBtn" aria-controls="mobileMenu" aria-expanded="false" aria-label="Apri menu">
-        <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
       </button>
     </div>
+
     <div class="mobile-menu" id="mobileMenu">
       <div class="mobile-nav-links">
-        <a href="/privati.html"   class="nav-link">Privati & Famiglia</a>
-        <a href="/business.html"  class="nav-link">Business & P.IVA</a>
-        <a href="/servizi.html"   class="nav-link">Servizi & Assistenza</a>
-        <a href="/smartphone.html" class="nav-link">Smartphone</a>
-        <a href="/negozi.html"    class="nav-link">I Nostri Negozi</a>
-        <a href="/contatti.html"  class="nav-link">Contatti</a>
+        <a href="privati.html" class="nav-link">Privati & Famiglia</a>
+        <a href="business.html" class="nav-link">Business & P.IVA</a>
+        <a href="servizi.html" class="nav-link">Servizi & Assistenza</a>
+        <a href="smartphone.html" class="nav-link">Smartphone</a>
+        <a href="negozi.html" class="nav-link">I Nostri Negozi</a>
+        <a href="contatti.html" class="nav-link">Contatti</a>
       </div>
     </div>
   </nav>
 
-  <!-- HERO (identico al tuo, solo path corretti) -->
+  <!-- HERO -->
   <section class="hero" id="home" aria-labelledby="titolo-hero">
     <div class="hero-inner">
       <div>
-        <div class="badge-ufficiale" aria-label="Partner Autorizzato Vodafone">⭐ Partner Autorizzato Vodafone</div>
-        <h1 id="titolo-hero">Vodafone Store <span style="color:#e60000">Milano</span></h1>
+        <div class="badge-ufficiale">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2L14.09 8.26L20.73 9.27L16.36 13.5L17.55 20.09L12 16.77L6.45 20.09L7.64 13.5L3.27 9.27L9.91 8.26L12 2Z"/></svg>
+          <span>Partner Autorizzato Vodafone</span>
+        </div>
+        <h1 id="titolo-hero">Vodafone Store <span class="brand">Milano</span></h1>
         <p class="hero-subtitle">3 negozi • Assistenza diretta • Senza code online</p>
 
-        <div class="hero-stats" aria-label="Dati di fiducia">
+        <div class="hero-stats" aria-label="Indicatori di fiducia">
           <div class="stat-box"><span class="stat-number">2.000+</span><span class="stat-label">clienti business</span></div>
           <div class="stat-box"><span class="stat-number">Dal 2010</span><span class="stat-label">sempre attivi</span></div>
           <div class="stat-box"><span class="stat-number">10 min</span><span class="stat-label">risposta rapida</span></div>
@@ -119,14 +110,14 @@
         <div class="cta-row">
           <a class="btn btn-primary" href="#offerte" aria-label="Scopri le offerte Vodafone">🚀 <span>Scopri le Offerte</span></a>
           <a class="btn btn-ghost" href="https://wa.me/393331234567?text=Ciao!%20Vorrei%20un%20preventivo%20Vodafone." aria-label="Contattaci su WhatsApp">💬 WhatsApp</a>
-          <a class="btn btn-ghost" href="/negozi.html" aria-label="Trova il negozio più vicino">📍 Trova Negozio</a>
+          <a class="btn btn-ghost" href="negozi.html" aria-label="Trova il negozio più vicino">📍 Trova Negozio</a>
         </div>
       </div>
 
       <div class="mock" aria-hidden="true">
         <div class="phone">
           <div class="screen">
-            <img src="/assets/images/hero/mesh-1600.webp" alt="" width="800" height="1200" fetchpriority="high" decoding="async" style="width:100%;height:100%;object-fit:cover">
+            <img src="assets/images/hero/mesh-1600.webp" alt="" width="800" height="1200" fetchpriority="high" decoding="async" style="width:100%;height:100%;object-fit:cover">
           </div>
         </div>
         <div class="glass-card">5G • Fibra • Business</div>
@@ -134,25 +125,258 @@
     </div>
   </section>
 
-  <!-- WHY LOCAL, OFFERTE, RECENSIONI, SERVICES, CTA, FOOTER -->
-  <!-- (Contenuti identici al tuo markup, con href/path corretti e classi invariate) -->
-  <!-- Per brevità non ripeto qui: COPIA le tue sezioni dal messaggio e aggiorna i link .html -->
-  <!-- Suggerimento: mantieni lo stesso contenuto che hai incollato, è già perfetto lato UX. -->
+  <!-- WHY LOCAL -->
+  <section class="why-local">
+    <div class="why-local-container">
+      <h2>Quello che Online <span class="brand">Non Puoi Avere</span></h2>
+      <div class="benefits-grid">
+        <article class="benefit-card"><div class="benefit-icon">⚡</div><strong>Attivazione IMMEDIATA</strong><p>SIM e Fibra attive subito. Online aspetti giorni.</p></article>
+        <article class="benefit-card"><div class="benefit-icon">👤</div><strong>Assistenza UMANA</strong><p>Marco risponde su WhatsApp. Non un bot.</p></article>
+        <article class="benefit-card"><div class="benefit-icon">🛠️</div><strong>Risolviamo CASINI</strong><p>Portabilità bloccata? Fatture sbagliate? Ci pensiamo noi.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider" aria-hidden="true"></div>
+
+  <!-- OFFERTE -->
+  <section id="offerte" class="offerte-wrap">
+    <div class="offerta-locale">
+      <div class="badge-esclusivo">SOLO IN NEGOZIO</div>
+      <h3>Fibra 2.5Gb + Mobile Unlimited</h3>
+      <div class="prezzo">
+        <span class="strike">€54.90 online</span>
+        <span class="actual">€39.90<small>/mese</small></span>
+      </div>
+      <p class="extra-deal">+ iPhone 15 a €19/mese invece di €29</p>
+      <div class="cta-wrapper">
+        <a href="https://wa.me/393331234567?text=Ciao!%20Sono%20interessato%20all'offerta%20Fibra%202.5Gb%20%2B%20Mobile%20a%20€39.90" class="cta-primary" aria-label="Scrivici su WhatsApp per l'offerta">
+          <!-- icona whatsapp -->
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347"/></svg>
+          WhatsApp: 333 123 4567
+        </a>
+        <span class="urgency-text">⚡ Attivazione immediata in negozio</span>
+      </div>
+    </div>
+
+    <header class="offerte-head">
+      <div class="super-badge">🔥 Altre offerte in evidenza</div>
+      <h2>Privati & Business</h2>
+      <p>Attivazione in negozio o da remoto, numero in portabilità senza stress.</p>
+    </header>
+
+    <div class="marquee">
+      <article class="plan plan-recommended">
+        <h3>5G Unlimited</h3>
+        <div class="price">€ 19,99 <small>/mese</small></div>
+        <ul>
+          <li>Giga, minuti e SMS illimitati</li>
+          <li>5G priorità rete</li>
+          <li>Hotspot incluso</li>
+        </ul>
+        <a class="btn btn-primary" href="privati.html#5g-unlimited">Attiva ora</a>
+      </article>
+
+      <article class="plan plan-popular">
+        <h3>Fibra 2.5 Gbps</h3>
+        <div class="price">€ 24,90 <small>/mese</small></div>
+        <ul>
+          <li>Modem Wi-Fi 6 incluso</li>
+          <li>Installazione rapida</li>
+          <li>Assistenza dedicata</li>
+        </ul>
+        <a class="btn btn-primary" href="servizi.html#fibra-25g">Verifica copertura</a>
+      </article>
+
+      <article class="plan">
+        <h3>Business One</h3>
+        <div class="price">da € 29,90 <small>/mese</small></div>
+        <ul>
+          <li>Linea dedicata & IP statico</li>
+          <li>Centralino virtuale</li>
+          <li>Supporto priority</li>
+        </ul>
+        <a class="btn btn-primary" href="business.html#one">Richiedi consulenza</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- RECENSIONI -->
+  <section class="recensioni">
+    <div class="recensioni-container">
+      <h2>I Vostri Vicini Dicono di Noi</h2>
+      <p class="subtitle">Recensioni verificate da Google Business</p>
+
+      <div class="reviews-grid">
+        <article class="review-card">
+          <div class="review-header"><div class="stars">⭐⭐⭐⭐⭐</div><img src="assets/images/google-verified.svg" alt="Google Verified" class="google-badge" width="80" height="20" loading="lazy"></div>
+          <strong>Marco P.</strong><span class="reviewer-info">Imprenditore, Milano Centro</span>
+          <p>"Gestiscono 12 linee aziendali da 3 anni. Zero problemi, assistenza sempre puntuale. Risparmio €200/mese rispetto a prima."</p>
+          <time datetime="2025-09-08">2 settimane fa</time>
+        </article>
+
+        <article class="review-card">
+          <div class="review-header"><div class="stars">⭐⭐⭐⭐⭐</div><img src="assets/images/google-verified.svg" alt="Google Verified" class="google-badge" width="80" height="20" loading="lazy"></div>
+          <strong>Laura M.</strong><span class="reviewer-info">Famiglia, Navigli</span>
+          <p>"Finalmente qualcuno che ti spiega tutto CHIARO. Portabilità fatta in 10 minuti. Online ci avrei messo giorni."</p>
+          <time datetime="2025-08-22">1 mese fa</time>
+        </article>
+
+        <article class="review-card">
+          <div class="review-header"><div class="stars">⭐⭐⭐⭐⭐</div><img src="assets/images/google-verified.svg" alt="Google Verified" class="google-badge" width="80" height="20" loading="lazy"></div>
+          <strong>Giuseppe R.</strong><span class="reviewer-info">Ristoratore, CityLife</span>
+          <p>"Avevo un casino con le fatture business. Risolto in negozio in mezz'ora. Provate a farlo online..."</p>
+          <time datetime="2025-09-01">3 settimane fa</time>
+        </article>
+      </div>
+
+      <div class="review-cta">
+        <a href="https://g.page/r/vodafone-milano/review" target="_blank" rel="noopener" class="btn-review">Leggi tutte le 487 recensioni su Google →</a>
+        <div class="rating-summary">
+          <span class="rating-number">4.8</span><div class="rating-stars">⭐⭐⭐⭐⭐</div><span class="rating-count">su 487 recensioni</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="services-container">
+      <div class="section-header">
+        <div class="section-tag">• I NOSTRI SERVIZI</div>
+        <h2 class="section-title">Soluzioni Complete per Te</h2>
+        <p class="section-subtitle">Dalla connettività domestica alle soluzioni business, dai dispositivi più avanzati al supporto personalizzato.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <article class="card"><span class="ribbon">PRIVATI</span><div class="icon-ring">🏠</div><h3>Privati & Famiglia</h3><p>Offerte mobile, fibra casa, smartphone top. Vantaggi famiglia.</p><a class="card-cta" href="privati.html">Scopri le offerte →</a></article>
+        <article class="card"><span class="ribbon">BUSINESS</span><div class="icon-ring">🏢</div><h3>Business & P.IVA</h3><p>Connettività dedicata, centralini, IP statico, assistenza prioritaria.</p><a class="card-cta" href="business.html">Soluzioni su misura →</a></article>
+        <article class="card"><div class="icon-ring">🔧</div><h3>Servizi & Assistenza</h3><p>Portabilità, configurazione, riparazioni e consulenza in store/remoto.</p><a class="card-cta" href="servizi.html">Tutti i servizi →</a></article>
+        <article class="card"><div class="icon-ring">📱</div><h3>Smartphone Top</h3><p>iPhone 16, Galaxy S25 e brand premium. Permuta e finanziamento TAN 0%.</p><a class="card-cta" href="smartphone.html">Disponibilità →</a></article>
+        <article class="card"><div class="icon-ring">🏪</div><h3>I Nostri Negozi</h3><p>3 store a Milano. Prenota o passa: attivazione express.</p><a class="card-cta" href="negozi.html">Trova negozio →</a></article>
+        <article class="card"><div class="icon-ring">💬</div><h3>WhatsApp Business</h3><p>Preventivi e supporto 7/7 direttamente in chat.</p><a class="card-cta" href="https://wa.me/393331234567">Scrivici ora →</a></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-container">
+      <h2 class="cta-title">Inizia il Tuo Futuro Digitale</h2>
+      <p class="cta-subtitle">Analisi gratuita, confronto trasparente e attivazione senza stress. Nei nostri 3 negozi a Milano.</p>
+      <div class="cta-buttons">
+        <a href="tel:+393331234567" class="btn-white">📞 <span>Chiama 333 123 4567</span></a>
+        <a href="negozi.html" class="btn-white">📍 <span>Trova Negozio</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 48" preserveAspectRatio="none"><path d="M0,32 C240,0 480,0 720,24 C960,48 1200,48 1440,24 L1440,48 L0,48 Z" fill="rgba(255,255,255,0.02)"></path></svg>
+    </div>
+
+    <div class="footer-inner">
+      <div class="footer-head">
+        <div class="brand-lockup"><span class="brand-dot" aria-hidden="true"></span><div><div class="brand-title">Vodafone Store Milano</div><div class="brand-sub">Rivenditore autorizzato – Privati & Business</div></div></div>
+        <div class="footer-cta">
+          <a class="btn btn-primary" href="https://wa.me/393331234567?text=Ciao!%20Vorrei%20un%20preventivo%20Vodafone." aria-label="Scrivici su WhatsApp">💬 WhatsApp</a>
+          <a class="btn btn-ghost" href="negozi.html" aria-label="Trova negozio Vodafone a Milano">📍 Trova Negozio</a>
+        </div>
+      </div>
+
+      <div class="footer-grid">
+        <section class="ft-block col-4" aria-labelledby="ft-servizi">
+          <h4 id="ft-servizi">Servizi</h4>
+          <ul class="ft-links">
+            <li><a href="privati.html">Offerte Privati</a></li>
+            <li><a href="business.html">Soluzioni Business</a></li>
+            <li><a href="servizi.html#fibra">Fibra Ottica</a></li>
+            <li><a href="smartphone.html">Smartphone Premium</a></li>
+            <li><a href="servizi.html">Assistenza & Portabilità</a></li>
+          </ul>
+        </section>
+
+        <section class="ft-block col-3" aria-labelledby="ft-negozi">
+          <h4 id="ft-negozi">I nostri negozi</h4>
+
+          <div class="store">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>
+            <div>
+              <strong>Duomo <span class="chip">Centro</span><span class="open-badge" data-hours="09:30-19:30"></span></strong><br>
+              <small>Via Dante, 15 – 20121 Milano</small><br>
+              <a href="negozi.html#duomo">Dettagli & Indicazioni</a>
+            </div>
+          </div>
+
+          <div class="store">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>
+            <div>
+              <strong>Navigli <span class="chip">Sud</span><span class="open-badge" data-hours="09:30-19:30"></span></strong><br>
+              <small>Ripa di Porta Ticinese, 62 – 20143</small><br>
+              <a href="negozi.html#navigli">Dettagli & Indicazioni</a>
+            </div>
+          </div>
+
+          <div class="store">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>
+            <div>
+              <strong>CityLife <span class="chip">Nord-Ovest</span><span class="open-badge" data-hours="09:00-20:00"></span></strong><br>
+              <small>Piazza Tre Torri, 1 – 20145</small><br>
+              <a href="negozi.html#citylife">Dettagli & Indicazioni</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="ft-block col-3" aria-labelledby="ft-contatti">
+          <h4 id="ft-contatti">Contatti</h4>
+          <div class="contact-row">
+            <div class="contact-item"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.11.37 2.31.57 3.58.57a1 1 0 0 1 1 1V21a1 1 0 0 1-1 1C10.85 22 2 13.15 2 2a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.27.2 2.47.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2z"/></svg>
+              <a href="tel:+393331234567" rel="noopener">+39 333 123 4567</a></div>
+            <div class="contact-item"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v.4l10 6.25L22 6.4V6a2 2 0 0 0-2-2zm0 5.2-8 5-8-5V18a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9.2z"/></svg>
+              <a href="mailto:info@vodafone-milano.it" rel="noopener">info@vodafone-milano.it</a></div>
+            <div class="contact-item"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7z"/></svg>
+              <address style="font-style:normal">Via Dante, 15 – 20121 Milano (MI)</address></div>
+          </div>
+          <div class="socials" aria-label="Social media">
+            <a href="#" aria-label="Facebook" rel="noopener" target="_blank">f</a>
+            <a href="#" aria-label="Instagram" rel="noopener" target="_blank">ig</a>
+            <a href="#" aria-label="LinkedIn" rel="noopener" target="_blank">in</a>
+            <a href="https://wa.me/393331234567" aria-label="WhatsApp" rel="noopener" target="_blank">wa</a>
+          </div>
+        </section>
+
+        <section class="ft-block col-2" aria-labelledby="ft-legale">
+          <h4 id="ft-legale">Legale</h4>
+          <p><strong>TechPartner S.r.l.</strong><br>P.IVA 12345678901 – REA MI-1234567<br>Cap. Soc. €50.000 i.v.</p>
+          <p class="legal-note">Vodafone è un marchio registrato di Vodafone Group Plc. Questo sito è di un rivenditore autorizzato.</p>
+        </section>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2025 Vodafone Store Milano</div>
+        <nav class="legal" aria-label="Link legali">
+          <a href="privacy.html">Privacy</a> ·
+          <a href="cookie.html">Cookie</a> ·
+          <a href="termini.html">Termini</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
 
   <!-- Back to top -->
   <a href="#home" class="back-top" id="backTop" aria-label="Torna su">
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 14l5-5 5 5z"/></svg>
   </a>
 
-  <!-- WhatsApp floating -->
-  <a href="https://wa.me/393331234567?text=Ciao!%20Sono%20interessato%20alle%20offerte%20Vodafone."
-     class="whatsapp-btn" aria-label="Contattaci su WhatsApp">
-     <!-- icona inline come nel tuo codice -->
-     <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="..."/></svg>
+  <!-- WhatsApp FAB -->
+  <a href="https://wa.me/393331234567?text=Ciao!%20Sono%20interessato%20alle%20offerte%20Vodafone.%20Potreste%20aiutarmi%20a%20scegliere%20la%20soluzione%20migliore?" class="whatsapp-btn" aria-label="Contattaci su WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967..."/></svg>
   </a>
 
   <!-- JS -->
-  <script defer src="/assets/js/cookie-banner.js"></script>
-  <script defer src="/assets/js/main.js"></script>
+  <script defer src="assets/js/cookie-banner.js"></script>
+  <script defer src="assets/js/main.js"></script>
 </body>
 </html>
