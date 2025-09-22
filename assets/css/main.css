@@ -207,7 +207,6 @@ body{
   .reviews-grid{grid-template-columns:1fr}
   .review-cta{flex-direction:column;gap:12px;align-items:flex-start}
 }
-.recensioni h2{outline:3px solid lime !important;}
 
 /* ==== FIX: rimuovi outline verde dal titolo recensioni ==== */
 .recensioni h2:focus,
