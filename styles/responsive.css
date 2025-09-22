@@ -1,0 +1,13 @@
+/* Mobile default già ottimo. Aumentiamo colonne su viewport grandi */
+@media (max-width: 960px){
+  .hero-grid { grid-template-columns: 1fr; }
+  .quotes { grid-template-columns: 1fr; }
+  .cards { grid-template-columns: 1fr 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .header-cta { display:none; }
+  .main-nav ul { position: fixed; inset: 64px 12px auto 12px; background:#fff; border:1px solid #eee; border-radius: 16px; padding: .5rem; display:none; flex-direction:column; }
+  .nav-toggle { display:inline-flex; }
+}
+@media (max-width: 560px){
+  .cards { grid-template-columns: 1fr; }
+}
