@@ -129,6 +129,28 @@ body{
 .footer-bottom{margin-top:30px;padding-top:18px;border-top:1.5px solid rgba(255,255,255,.35);display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;color:rgba(255,255,255,.92);font-size:.95rem;font-weight:500}
 .legal a{color:rgba(255,255,255,.85);text-decoration:none;padding:4px 8px;border-radius:8px}
 
+/* ==== WhatsApp CTA & Floating Button ==== */
+.cta-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #25D366;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.8rem 1.6rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.cta-whatsapp i {
+  font-size: 1.2rem;
+}
+
+.cta-whatsapp:hover {
+  background: #20b954;
+}
+
 /* Back to top & WhatsApp FAB */
 .back-top{position:fixed;right:24px;bottom:24px;z-index:999;width:52px;height:52px;border-radius:50%;display:none;place-items:center;color:var(--brand);text-decoration:none;background:rgba(255,255,255,.95);backdrop-filter:blur(20px);border:2px solid rgba(255,255,255,.6);box-shadow:0 8px 25px rgba(0,0,0,.2), 0 0 40px rgba(255,255,255,.3);transition:.4s}
 .back-top.show{display:grid}
@@ -136,17 +158,17 @@ body{
   position: fixed;
   bottom: 20px;
   right: 20px;
+  width: 56px;
+  height: 56px;
   background: #25D366;
-  color: #fff;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #fff;
   font-size: 28px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  z-index: 1000;
+  z-index: 999;
   transition: transform 0.3s ease;
 }
 
@@ -155,9 +177,6 @@ body{
   background: #20b954;
 }
 
-.whatsapp-btn i {
-  line-height: 1;
-}
 
 /* Breadcrumb */
 .breadcrumb{max-width:1200px;margin:120px auto 0;padding:0 24px}
