@@ -1,0 +1,19 @@
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Vodafone Store Milano - Duomo",
+  "image": "https://vodafone-store-milano.com/og/og-1200x630.jpg",
+  "address": {
+    "@type":"PostalAddress",
+    "streetAddress":"Via Dante 15",
+    "addressLocality":"Milano",
+    "postalCode":"20121",
+    "addressCountry":"IT"
+  },
+  "telephone":"+39 333 123 4567",
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:30","closes":"19:30"}
+  ],
+  "geo":{"@type":"GeoCoordinates","latitude":45.467,"longitude":9.189},
+  "url":"https://vodafone-store-milano.com/negozi.html#duomo"
+}
