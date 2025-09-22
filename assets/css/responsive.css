@@ -74,3 +74,62 @@
 /* opzionale: previeni SVG “fluidi” nel footer */
 .site-footer svg { max-width: none; }
 
+/* ========= MOBILE TWEAKS (solo smartphone) ========= */
+
+/* 1) Hero stats più compatti e allineati (2.000+ / Dal 2010 / 10 min) */
+@media (max-width: 480px){
+  .hero-subtitle{ margin-bottom: 1rem }
+  .hero-stats{
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    gap: 8px;
+    margin: 1rem 0 1.25rem;
+  }
+  .stat-box{
+    padding: .7rem .6rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.04);
+  }
+  .stat-number{ font-size: 1.12rem; line-height: 1.1 }
+  .stat-label{ font-size: .7rem; letter-spacing: .01em }
+}
+
+/* 2) CTA WhatsApp nell'offerta: numero su una riga + icona più grande */
+@media (max-width: 480px){
+  .offerta-locale .cta-primary{
+    white-space: nowrap;       /* impedisce l'andare a capo del numero */
+    font-size: 1.05rem;
+    padding: 1rem 2rem;
+    gap: .65rem;
+    border-radius: 999px;
+  }
+  .offerta-locale .cta-primary svg{
+    width: 30px;
+    height: 30px;
+    flex: 0 0 30px;
+  }
+}
+
+/* 3) Badge “Partner Autorizzato” un filo più stretto su mobile */
+@media (max-width: 480px){
+  .badge-ufficiale{
+    padding: .5rem .9rem;
+    border-radius: 999px;
+    font-size: .9rem;
+    gap: .5rem;
+  }
+}
+
+/* 4) Spaziatura card offerte: riduci bordo/ombra per più respiro */
+@media (max-width: 480px){
+  .offerta-locale{
+    padding: 2rem 1.25rem;
+    border-width: 2px;
+    margin-bottom: 2rem;
+  }
+  .plan{ min-width: 280px }
+}
+
+/* 5) Titoli hero leggermente più piccoli per primo fold pulito */
+@media (max-width: 480px){
+  .hero h1{ font-size: clamp(32px, 9vw, 44px) }
+}
