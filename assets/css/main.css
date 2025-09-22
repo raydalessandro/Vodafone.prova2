@@ -169,3 +169,41 @@ body{
 
 /* Minor chips used in negozi/contatti */
 .chip{font-size:.72rem;font-weight:800;color:#e60000;background:#fff;padding:4px 10px;border-radius:999px;margin-left:6px;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+
+/* ==== RECENSIONI (Google reviews) ==== */
+.recensioni{background:#f8fafc;padding:5rem 2rem;position:relative;overflow:hidden}
+.recensioni::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:4px;
+  background:linear-gradient(90deg,#e60000 0%,#ff6b6b 25%,#e60000 50%,#ff6b6b 75%,#e60000 100%);
+  background-size:200% 100%;animation:rec-shimmer 3s linear infinite
+}
+@keyframes rec-shimmer{to{background-position:-200% 0}}
+
+.recensioni-container{max-width:1200px;margin:0 auto}
+.recensioni h2{font-size:clamp(28px,4vw,42px);text-align:center;margin-bottom:.5rem;font-weight:800;color:#1e293b}
+.recensioni .subtitle{text-align:center;color:#64748b;margin-bottom:3rem;font-size:1.1rem}
+
+.reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2rem;margin-bottom:3rem}
+.review-card{background:#fff;padding:2rem;border-radius:16px;box-shadow:0 4px 12px rgba(0,0,0,.08);border:1px solid #e2e8f0;position:relative;transition:.3s}
+.review-card:hover{transform:translateY(-4px);box-shadow:0 12px 24px rgba(0,0,0,.12);border-color:#e60000}
+.review-card::before{content:'"';position:absolute;top:1rem;right:1.5rem;font-size:4rem;color:#e60000;opacity:.1;font-family:Georgia,serif}
+
+.review-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem}
+.stars,.rating-stars{color:#fbbf24;font-size:1.1rem}
+.google-badge{height:20px;opacity:.7}
+.review-card strong{display:block;font-size:1.1rem;color:#1e293b;margin-bottom:.25rem}
+.reviewer-info{display:block;font-size:.9rem;color:#64748b;margin-bottom:1rem}
+.review-card p{color:#475569;line-height:1.7;font-style:italic;margin-bottom:1rem}
+.review-card time{font-size:.85rem;color:#94a3b8}
+
+.review-cta{display:flex;justify-content:space-between;align-items:center;padding-top:2rem;border-top:1px solid #e2e8f0}
+.btn-review{color:#e60000;text-decoration:none;font-weight:600;font-size:1.05rem;display:inline-flex;align-items:center;gap:.5rem}
+.btn-review:hover{text-decoration:underline}
+.rating-summary{display:flex;align-items:center;gap:1rem}
+.rating-number{font-size:2rem;font-weight:800;color:#1e293b}
+.rating-count{font-size:.9rem;color:#64748b}
+
+@media (max-width:640px){
+  .reviews-grid{grid-template-columns:1fr}
+  .review-cta{flex-direction:column;gap:12px;align-items:flex-start}
+}
