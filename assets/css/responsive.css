@@ -48,3 +48,29 @@
   .grid-3>*{grid-column:span 12}
   .plans-grid{grid-template-columns:1fr}
 }
+
+/* ==== FIX FOOTER ICON SIZE (mobile & desktop) ==== */
+.site-footer .contact-item svg,
+.site-footer .socials a svg,
+.site-footer .store > svg,
+.site-footer .ft-block h4 svg {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+}
+
+/* riduci ancora un filo su schermi stretti */
+@media (max-width: 640px){
+  .site-footer .contact-item svg,
+  .site-footer .socials a svg,
+  .site-footer .store > svg,
+  .site-footer .ft-block h4 svg {
+    width: 18px;
+    height: 18px;
+    flex-basis: 18px;
+  }
+}
+
+/* opzionale: previeni SVG “fluidi” nel footer */
+.site-footer svg { max-width: none; }
+
